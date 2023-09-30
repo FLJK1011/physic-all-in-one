@@ -33,6 +33,7 @@ int main() {
                     cin >> c_m1;
                     cout << endl;
 
+
                     double delta_m1 = (((b_m1 * b_m1)) - (4 * (a_m1) * (c_m1)));
 
                     if (delta_m1 < 0) {
@@ -63,9 +64,44 @@ int main() {
                     }
 
                 }
-                else if (math == 2)
-                {
-                    cout << "App 2" << endl;
+                else if (math == 2) {
+                    cout << "(ax+b)" << endl;
+                    cout << endl;
+                    cout << "Enter a : ";
+                    int a_m2;
+                    cin >> a_m2;
+                    cout << endl;
+                    cout << "Enter x (Character): ";
+                    string x_m2;
+                    cin >> x_m2;
+                    cout << endl;
+                    cout << "Enter b : ";
+                    int b_m2;
+                    cin >> b_m2;
+                    cout << endl;
+                    double a_2_m2 = (pow(a_m2,2));
+                    double ab2_m2 = (2  * a_m2 * b_m2);
+                    double b_2_m2 = (pow(b_m2 , 2));
+                    cout << endl;
+
+                    if (a_m2 == 1)
+                    {
+                        string z = "(" + x_m2 + "2 + " + b_m2 + ")2";
+                        string z_1 = "x + " + ab2_m2 + x_m2 + " + " + b_2_m2;
+                        cout << z << endl;
+                        cout << endl;
+                        cout << z_1 << endl;
+                        cout << endl;
+                    }
+                    else
+                    {
+                        string z = "(" + a_m2 + x_m2 + " + " + b_m2 + ")2";
+                        string z_1 = a_2_m2 + x_m2 + "2 + " + ab2_m2 + x_m2 + " + " + b_2_m2;
+                        cout << z << endl;
+                        cout << endl;
+                        cout << z_1 << endl;
+                        cout << endl;
+                    }
                 }
                 else if (math == 0)
                 {
